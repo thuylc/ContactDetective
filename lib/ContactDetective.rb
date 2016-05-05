@@ -65,7 +65,7 @@ module ContactDetective
   class Phonenumbers
     def self.getallnumbers(text)
       pattone = text.scan(/[0-9]{3}\-[0-9]{3}\-[0-9]{4}/)
-      patttwo = text.scan(/\([0-9]{3}\)\-[0-9]{3}\-[0-9]{3}/)
+      pattwo = text.scan(/\([0-9]{3}\)\-[0-9]{3}\-[0-9]{3}/)
       pattthree = text.scan(/[0-9]{3} [0-9]{3} [0-9]{4}/)
       return pattone + pattwo
     end
