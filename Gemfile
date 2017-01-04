@@ -4,3 +4,4 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'ContactDetective', :path => ''
+gem 'open_uri_redirections'

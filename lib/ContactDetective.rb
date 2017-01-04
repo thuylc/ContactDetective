@@ -3,7 +3,7 @@ require "ContactDetective/version"
 module ContactDetective
   #gets html from a link
   def self.gethtmlfromlink(link)
-    require 'open-uri'
+    require 'open_uri_redirections'
     return open(link, :allow_redirections => :safe, &:read)
   end
 
