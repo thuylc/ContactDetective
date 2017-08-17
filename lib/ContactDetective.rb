@@ -4,7 +4,7 @@ module ContactDetective
   #gets html from a link
   def self.gethtmlfromlink(link)
     require 'open_uri_redirections'
-    return open(link, :allow_redirections => :safe, &:read)
+    return open(link, :allow_redirections => :safe,ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE, &:read)
   end
 
   #gets all emails from a link
